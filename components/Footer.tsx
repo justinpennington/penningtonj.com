@@ -40,6 +40,14 @@ export function Footer() {
           </div>
           <div className="flex flex-col gap-2">
             <span className="text-xs font-semibold uppercase tracking-widest text-white/40">
+              Content
+            </span>
+            <Link href="/blog" className="hover:text-white">
+              Blog
+            </Link>
+          </div>
+          <div className="flex flex-col gap-2">
+            <span className="text-xs font-semibold uppercase tracking-widest text-white/40">
               Legal
             </span>
             <Link href="/privacy" className="hover:text-white">
