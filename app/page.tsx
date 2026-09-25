@@ -4,7 +4,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
 import { ParallaxImage } from "@/components/ParallaxImage";
-import { faqs, products, sameAs, site } from "@/lib/site";
+import { companies, faqs, infraxioProducts, sameAs, site } from "@/lib/site";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -27,8 +27,12 @@ const jsonLd = {
       image: `${site.url}${site.headshot}`,
       jobTitle: "Founder",
       description:
-        "Justin Pennington is the founder of Infraxio, a technology consulting and software company based in Ponte Vedra, Florida.",
-      worksFor: { "@id": "https://www.infraxio.com/#organization" },
+        "Justin Pennington is the founder of Infraxio, Growth7, and DockOps. Infraxio is a technology consulting and software company based in Ponte Vedra, Florida.",
+      worksFor: [
+        { "@id": "https://www.infraxio.com/#organization" },
+        { "@id": `${site.growth7Url}/#organization` },
+        { "@id": `${site.dockopsUrl}/#organization` },
+      ],
       address: {
         "@type": "PostalAddress",
         addressLocality: "Ponte Vedra",
@@ -57,6 +61,25 @@ const jsonLd = {
         addressRegion: "FL",
         addressCountry: "US",
       },
+      owns: infraxioProducts.map((p) => ({
+        "@type": "SoftwareApplication",
+        name: p.name,
+        applicationCategory: "BusinessApplication",
+      })),
+    },
+    {
+      "@type": "Organization",
+      "@id": `${site.growth7Url}/#organization`,
+      name: "Growth7",
+      url: site.growth7Url,
+      founder: { "@id": `${site.url}/#person` },
+    },
+    {
+      "@type": "Organization",
+      "@id": `${site.dockopsUrl}/#organization`,
+      name: "DockOps",
+      url: site.dockopsUrl,
+      founder: { "@id": `${site.url}/#person` },
     },
     {
       "@type": "FAQPage",
@@ -120,7 +143,8 @@ export default function Home() {
               </h1>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/80 sm:text-xl">
                 Justin Pennington is the founder of Infraxio, a technology
-                consulting and software company based in Ponte Vedra, Florida.
+                consulting and software company based in Ponte Vedra, Florida,
+                and of Growth7 and DockOps.
               </p>
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <BookButton />
@@ -139,7 +163,7 @@ export default function Home() {
                 <div className="relative aspect-square overflow-hidden rounded-full ring-1 ring-white/20 ring-offset-8 ring-offset-transparent">
                   <Image
                     src={site.headshot}
-                    alt="Justin Pennington, founder of Infraxio"
+                    alt="Justin Pennington, founder of Infraxio, Growth7, and DockOps"
                     fill
                     preload
                     sizes="(min-width: 768px) 340px, 80vw"
@@ -184,31 +208,63 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Software */}
+        {/* Companies & Software */}
         <section id="software" className="bg-sand py-24 sm:py-32">
           <div className="mx-auto max-w-6xl px-5 sm:px-8">
             <Reveal className="max-w-3xl">
-              <Eyebrow>Software in Production</Eyebrow>
+              <Eyebrow>Companies &amp; Software</Eyebrow>
               <h2 className="font-display text-4xl leading-tight tracking-tight sm:text-5xl">
                 Built to Solve Real Problems
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-ink/75">
-                That is why Infraxio builds and runs its own software. IFX Hub,
-                Growth7, IFX Bid, and DockOps all started as answers to
-                problems Justin was solving for a real client or for Infraxio
-                itself, and every one of them is in production today. When he
-                tells a client what a system should do, it is because he has
-                already made it do that somewhere else.
+                Justin is the founder of Infraxio, Growth7, and DockOps, and
+                Infraxio builds and runs its own software, including IFX Hub
+                and IFX Bid. Each one started as an answer to a problem Justin
+                was solving for a real client or for Infraxio itself, and every
+                one of them is in production today. When he tells a client what
+                a system should do, it is because he has already made it do
+                that somewhere else.
               </p>
             </Reveal>
-            <div className="mt-14 grid gap-5 sm:grid-cols-2">
-              {products.map((p, i) => (
+
+            <Reveal className="mt-16">
+              <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/50">
+                Companies Founded
+              </h3>
+            </Reveal>
+            <div className="mt-6 grid gap-5 md:grid-cols-3">
+              {companies.map((c, i) => (
+                <Reveal key={c.name} delay={i * 0.08}>
+                  <a
+                    href={c.url}
+                    className="group flex h-full flex-col rounded-2xl border border-ink/10 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-ember/40 hover:shadow-xl hover:shadow-ink/5"
+                  >
+                    <div className="mb-5 flex items-center justify-between">
+                      <span className="font-display text-2xl">{c.name}</span>
+                      <ArrowUpRight className="h-5 w-5 text-ink/30 transition group-hover:text-ember" />
+                    </div>
+                    <p className="flex-1 leading-relaxed text-ink/70">{c.blurb}</p>
+                    <p className="mt-6 text-xs font-semibold uppercase tracking-widest text-ember">
+                      Founder
+                    </p>
+                  </a>
+                </Reveal>
+              ))}
+            </div>
+
+            <Reveal className="mt-16">
+              <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/50">
+                Infraxio Products
+              </h3>
+            </Reveal>
+            <div className="mt-6 grid gap-5 sm:grid-cols-2">
+              {infraxioProducts.map((p, i) => (
                 <Reveal key={p.name} delay={i * 0.08}>
-                  <div className="group h-full rounded-2xl border border-ink/10 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-ember/40 hover:shadow-xl hover:shadow-ink/5">
+                  <div className="group h-full rounded-2xl border border-ink/10 bg-white/60 p-7 transition duration-300 hover:-translate-y-1 hover:border-ember/40 hover:bg-white hover:shadow-xl hover:shadow-ink/5">
                     <div className="mb-5 flex items-center justify-between">
                       <span className="font-display text-2xl">{p.name}</span>
                       <span className="text-xs font-semibold uppercase tracking-widest text-ink/40">
-                        0{i + 1}
+                        By Infraxio
                       </span>
                     </div>
                     <p className="leading-relaxed text-ink/70">{p.blurb}</p>

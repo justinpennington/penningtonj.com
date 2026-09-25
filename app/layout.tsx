@@ -1,14 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Inter, Inter_Tight } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { site } from "@/lib/site";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const interTight = Inter_Tight({
+  variable: "--font-inter-tight",
   subsets: ["latin"],
-  axes: ["opsz"],
 });
 
 export const metadata: Metadata = {
@@ -48,7 +47,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${fraunces.variable} h-full antialiased`}
+      className={`${inter.variable} ${interTight.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
         {children}

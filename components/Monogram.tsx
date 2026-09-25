@@ -11,9 +11,9 @@ export function Monogram({ className = "" }: { className?: string }) {
         x="32"
         y="43"
         textAnchor="middle"
-        fontFamily="Georgia, 'Times New Roman', serif"
+        fontFamily="Inter, Helvetica, Arial, sans-serif"
         fontSize="30"
-        fontWeight="600"
+        fontWeight="700"
         fill="#FFFFFF"
         letterSpacing="-1"
       >

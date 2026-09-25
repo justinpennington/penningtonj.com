@@ -13,8 +13,8 @@ export function Footer() {
             <span className="font-display text-xl">Justin Pennington</span>
           </Link>
           <p className="mt-4 text-sm leading-relaxed">
-            Founder of Infraxio, a technology consulting and software company
-            in Ponte Vedra, Florida.
+            Founder of Infraxio, Growth7, and DockOps. Based in Ponte Vedra,
+            Florida.
           </p>
         </div>
         <div className="flex flex-wrap gap-x-12 gap-y-6 text-sm">
@@ -24,6 +24,12 @@ export function Footer() {
             </span>
             <a href={site.infraxioUrl} className="hover:text-white">
               Infraxio
+            </a>
+            <a href={site.growth7Url} className="hover:text-white">
+              Growth7
+            </a>
+            <a href={site.dockopsUrl} className="hover:text-white">
+              DockOps
             </a>
             <a href={site.linkedinUrl} className="hover:text-white" rel="me">
               LinkedIn

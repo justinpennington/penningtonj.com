@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { join } from "node:path";
 import { readFile } from "node:fs/promises";
 import { OgMark } from "@/lib/og-mark";
+import { site } from "@/lib/site";
 
 export const alt = "Justin Pennington — Founder of Infraxio, Ponte Vedra";
 export const size = { width: 1200, height: 630 };
@@ -42,7 +43,7 @@ export default function OpengraphImage() {
             Justin Pennington
           </div>
           <div style={{ fontSize: 32, marginTop: 14, color: "rgba(255,255,255,0.82)" }}>
-            Founder of Infraxio · Ponte Vedra, Florida
+            {site.lede}
           </div>
           <div style={{ width: 90, height: 5, background: "#EA6726", borderRadius: 999, marginTop: 34 }} />
         </div>

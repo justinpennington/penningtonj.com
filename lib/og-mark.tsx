@@ -18,7 +18,6 @@ export function OgMark({ size }: { size: number }) {
           color: "#fff",
           fontSize: size * 0.47,
           fontWeight: 700,
-          fontFamily: "serif",
           letterSpacing: -2,
           lineHeight: 1,
         }}
