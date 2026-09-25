@@ -15,9 +15,11 @@ export const site = {
 };
 
 export const sameAs = [
-  site.infraxioUrl,
-  site.infraxioFounderUrl,
-  site.linkedinUrl,
+  "https://www.infraxio.com/justin-pennington",
+  "https://www.crunchbase.com/person/justin-pennington-4bcd",
+  "https://github.com/justinpennington",
+  "https://www.linkedin.com/in/justin-pennington",
+  "https://www.connectively.us/p/justin-pennington",
 ];
 
 export const faqs = [
