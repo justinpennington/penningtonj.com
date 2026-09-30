@@ -31,6 +31,12 @@ export function Footer() {
             <a href={site.dockopsUrl} className="hover:text-white">
               DockOps
             </a>
+            <a href={site.ifxHubUrl} className="hover:text-white">
+              IFX Hub
+            </a>
+            <a href={site.ifxBidUrl} className="hover:text-white">
+              IFX Bid
+            </a>
             <a href={site.linkedinUrl} className="hover:text-white" rel="me">
               LinkedIn
             </a>

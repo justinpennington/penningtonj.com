@@ -64,6 +64,7 @@ const jsonLd = {
       owns: infraxioProducts.map((p) => ({
         "@type": "SoftwareApplication",
         name: p.name,
+        url: p.url,
         applicationCategory: "BusinessApplication",
       })),
     },
@@ -260,16 +261,19 @@ export default function Home() {
             <div className="mt-6 grid gap-5 sm:grid-cols-2">
               {infraxioProducts.map((p, i) => (
                 <Reveal key={p.name} delay={i * 0.08}>
-                  <div className="group h-full rounded-2xl border border-ink/10 bg-white/60 p-7 transition duration-300 hover:-translate-y-1 hover:border-ember/40 hover:bg-white hover:shadow-xl hover:shadow-ink/5">
+                  <a
+                    href={p.url}
+                    className="group flex h-full flex-col rounded-2xl border border-ink/10 bg-white/60 p-7 transition duration-300 hover:-translate-y-1 hover:border-ember/40 hover:bg-white hover:shadow-xl hover:shadow-ink/5"
+                  >
                     <div className="mb-5 flex items-center justify-between">
                       <span className="font-display text-2xl">{p.name}</span>
-                      <span className="text-xs font-semibold uppercase tracking-widest text-ink/40">
-                        By Infraxio
-                      </span>
+                      <ArrowUpRight className="h-5 w-5 text-ink/30 transition group-hover:text-ember" />
                     </div>
-                    <p className="leading-relaxed text-ink/70">{p.blurb}</p>
-                    <div className="mt-6 h-0.5 w-10 bg-ember transition-all duration-300 group-hover:w-20" />
-                  </div>
+                    <p className="flex-1 leading-relaxed text-ink/70">{p.blurb}</p>
+                    <p className="mt-6 text-xs font-semibold uppercase tracking-widest text-ember">
+                      By Infraxio
+                    </p>
+                  </a>
                 </Reveal>
               ))}
             </div>
