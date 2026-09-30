@@ -10,7 +10,7 @@ export const site = {
   infraxioFounderUrl: "https://www.infraxio.com/justin-pennington",
   growth7Url: "https://www.growth7.io",
   dockopsUrl: "https://www.dockops.app",
-  ifxHubUrl: "https://ifxhub.com",
+  ifxHubUrl: "https://ifxhub.io",
   ifxBidUrl: "https://www.ifxbid.com",
   linkedinUrl: "https://www.linkedin.com/in/justin-pennington/",
   headshot: "/images/headshot.png",
