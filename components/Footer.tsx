@@ -9,7 +9,7 @@ export function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-5 py-14 sm:px-8 md:flex-row md:items-start md:justify-between">
         <div className="max-w-sm">
           <Link href="/" className="flex items-center gap-3 text-white">
-            <Monogram className="h-10 w-10 rounded-[10px] ring-1 ring-white/15" />
+            <Monogram className="h-10 w-10 rounded-full ring-1 ring-white/15" />
             <span className="font-display text-xl">Justin Pennington</span>
           </Link>
           <p className="mt-4 text-sm leading-relaxed">
