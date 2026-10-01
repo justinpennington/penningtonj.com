@@ -33,7 +33,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:h-20 sm:px-8">
         <Link href="/" className="group flex items-center gap-3 text-white">
-          <Monogram className="h-9 w-9 ring-1 ring-white/15 rounded-[10px] transition-transform duration-300 group-hover:-rotate-3" />
+          <Monogram className="h-9 w-9 ring-1 ring-white/15 rounded-full transition-transform duration-300 group-hover:-rotate-3" />
           <span className="font-display text-lg tracking-tight">
             Justin Pennington
           </span>
