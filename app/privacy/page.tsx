@@ -25,9 +25,9 @@ export default function PrivacyPage() {
       </p>
       <h2>Links to Other Sites</h2>
       <p>
-        The Site links to other websites, including infraxio.com, LinkedIn, and
-        a booking page hosted by Growth7. Information you provide on those sites
-        is governed by their own privacy policies.
+        The Site links to other websites, including infraxio.com and LinkedIn.
+        Information you provide on those sites is governed by their own privacy
+        policies.
       </p>
       <h2>Cookies</h2>
       <p>The Site itself does not set cookies.</p>

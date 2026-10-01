@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, ArrowUpRight, MapPin, Plus } from "lucide-react";
+import { ArrowUpRight, MapPin, Plus } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
@@ -107,17 +107,6 @@ function Eyebrow({ children, light = false }: { children: string; light?: boolea
   );
 }
 
-function BookButton({ className = "" }: { className?: string }) {
-  return (
-    <a
-      href={site.bookingUrl}
-      className={`group inline-flex items-center gap-2 rounded-full bg-ember px-7 py-3.5 font-medium text-white shadow-lg shadow-ember/25 transition hover:-translate-y-0.5 hover:bg-[#d9581a] hover:shadow-xl hover:shadow-ember/30 ${className}`}
-    >
-      Book a Call with Justin
-      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-    </a>
-  );
-}
 
 export default function Home() {
   return (
@@ -148,13 +137,12 @@ export default function Home() {
                 and of Growth7 and DockOps.
               </p>
               <div className="mt-10 flex flex-wrap items-center gap-4">
-                <BookButton />
                 <a
                   href={site.infraxioUrl}
-                  className="inline-flex items-center gap-1.5 rounded-full px-5 py-3.5 text-white/80 transition hover:text-white"
+                  className="group inline-flex items-center gap-2 rounded-full bg-ember px-7 py-3.5 font-medium text-white shadow-lg shadow-ember/25 transition hover:-translate-y-0.5 hover:bg-[#d9581a] hover:shadow-xl hover:shadow-ember/30"
                 >
                   Visit Infraxio
-                  <ArrowUpRight className="h-4 w-4" />
+                  <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </a>
               </div>
             </Reveal>
@@ -353,10 +341,15 @@ export default function Home() {
               Let’s Talk About Your Systems
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-lg text-white/80">
-              Book a call with Justin to talk through what your business needs
-              to run on.
+              Learn how Infraxio can help your business run on better systems.
             </p>
-            <BookButton className="mt-10" />
+            <a
+              href={site.infraxioUrl}
+              className="group mt-10 inline-flex items-center gap-2 rounded-full bg-ember px-7 py-3.5 font-medium text-white shadow-lg shadow-ember/25 transition hover:-translate-y-0.5 hover:bg-[#d9581a] hover:shadow-xl hover:shadow-ember/30"
+            >
+              Visit Infraxio
+              <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
           </Reveal>
         </section>
       </main>

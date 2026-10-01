@@ -40,9 +40,6 @@ export function Footer() {
             <a href={site.linkedinUrl} className="hover:text-white" rel="me">
               LinkedIn
             </a>
-            <a href={site.bookingUrl} className="hover:text-white">
-              Book a Call
-            </a>
           </div>
           <div className="flex flex-col gap-2">
             <span className="text-xs font-semibold uppercase tracking-widest text-white/40">

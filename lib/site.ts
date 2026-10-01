@@ -5,7 +5,6 @@ export const site = {
   description:
     "Justin Pennington is the founder of Infraxio, a technology consulting and software company in Ponte Vedra, Florida. Operator-led ERP, systems, and growth for real businesses.",
   lede: "Founder of Infraxio, Growth7 & DockOps · Ponte Vedra, Florida",
-  bookingUrl: "https://www.infraxio.com/book",
   infraxioUrl: "https://www.infraxio.com",
   infraxioFounderUrl: "https://www.infraxio.com/justin-pennington",
   growth7Url: "https://www.growth7.io",
