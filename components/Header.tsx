@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Monogram } from "./Monogram";
-import { site } from "@/lib/site";
 
 const nav = [
   { href: "/#about", label: "About" },
@@ -48,12 +47,6 @@ export function Header({ solid = false }: { solid?: boolean }) {
               {n.label}
             </Link>
           ))}
-          <a
-            href={site.bookingUrl}
-            className="ml-2 rounded-full bg-ember px-4 py-2 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-[#d9581a]"
-          >
-            Book a Call
-          </a>
         </nav>
       </div>
     </header>
