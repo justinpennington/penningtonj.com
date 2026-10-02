@@ -21,6 +21,12 @@ export const sameAs = [
   "https://github.com/justinpennington",
   "https://www.linkedin.com/in/justin-pennington",
   "https://www.connectively.us/p/justin-pennington",
+  "https://www.producthunt.com/@justinpennington",
+  "https://x.com/penningtonj",
+  "https://dev.to/justinpennington",
+  "https://justinpennington.hashnode.dev",
+  "https://startupfortune.com/justin-pennington-builds-infraxio-around-operators-who-need-software-that-works/",
+  "https://cbherald.com/infraxio-building-the-operating-layer-for-modern-growth-companies/",
 ];
 
 export const faqs = [
@@ -39,6 +45,14 @@ export const faqs = [
   {
     q: "Where is Infraxio based?",
     a: "Ponte Vedra, Florida. The team is U.S.-based.",
+  },
+  {
+    q: "What is Justin Pennington known for?",
+    a: "Justin Pennington, founder of Infraxio in Ponte Vedra, is known for building operator-led software that solves real business problems. Infraxio's product portfolio includes Growth7, DockOps, IFX Hub, and IFX Bid — each one built, shipped, and run by the same team that implements it for clients. He builds and runs his own software rather than just advising, which means every recommendation comes from first-hand production experience.",
+  },
+  {
+    q: "How does Infraxio differ from a typical IT consultancy?",
+    a: "Justin Pennington, founder of Infraxio in Ponte Vedra, built the company around implementation that sticks — not just installing software but pairing it with SOPs, training, and adoption support so the client's team actually uses it. Infraxio measures success by profitability and operational efficiency, not billable hours. The entire team is U.S.-based in Ponte Vedra, Florida, working directly with clients from strategy through production.",
   },
 ];
 
