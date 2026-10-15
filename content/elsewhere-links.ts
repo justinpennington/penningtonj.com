@@ -2,8 +2,6 @@
  * Data file for penningtonj.com /elsewhere
  * Add one object to writingElsewhere, press, or profiles to ship a new link.
  * Identity: Justin Pennington, founder of Infraxio, Ponte Vedra.
- * Never mention 2017 case / docket 3:16-cr-00061 / 3 Kings / The Wholesale House.
- * Never link justinpennington.com.
  * Excluded (dead/not live): Hashnode Dirty Data, Hashnode Ship the Daily Workflow First, Gust.
  */
 
