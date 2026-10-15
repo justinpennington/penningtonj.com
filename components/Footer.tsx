@@ -48,6 +48,9 @@ export function Footer() {
             <Link href="/blog" className="hover:text-white">
               Blog
             </Link>
+            <Link href="/elsewhere" className="hover:text-white">
+              Elsewhere
+            </Link>
           </div>
           <div className="flex flex-col gap-2">
             <span className="text-xs font-semibold uppercase tracking-widest text-white/40">

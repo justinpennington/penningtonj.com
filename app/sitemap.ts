@@ -12,6 +12,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
+    {
+      url: `${site.url}/elsewhere`,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
     ...posts.map((post) => ({
       url: `${site.url}/blog/${post.slug}`,
       lastModified: post.date,
