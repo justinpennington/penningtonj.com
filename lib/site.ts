@@ -1,3 +1,5 @@
+import { profileSameAs } from "@/content/elsewhere-links";
+
 export const site = {
   url: "https://penningtonj.com",
   name: "Justin Pennington",
@@ -16,17 +18,11 @@ export const site = {
 };
 
 export const sameAs = [
-  "https://www.infraxio.com/justin-pennington",
-  "https://www.crunchbase.com/person/justin-pennington-4bcd",
-  "https://github.com/justinpennington",
-  "https://www.linkedin.com/in/justin-pennington",
-  "https://www.connectively.us/p/justin-pennington",
-  "https://www.producthunt.com/@justinpennington",
-  "https://x.com/penningtonj",
-  "https://dev.to/justinpennington",
-  "https://justinpennington.hashnode.dev",
-  "https://startupfortune.com/justin-pennington-builds-infraxio-around-operators-who-need-software-that-works/",
-  "https://cbherald.com/infraxio-building-the-operating-layer-for-modern-growth-companies/",
+  ...new Set([
+    ...profileSameAs,
+    "https://startupfortune.com/justin-pennington-builds-infraxio-around-operators-who-need-software-that-works/",
+    "https://cbherald.com/infraxio-building-the-operating-layer-for-modern-growth-companies/",
+  ]),
 ];
 
 export const faqs = [
