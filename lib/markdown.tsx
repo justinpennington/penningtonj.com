@@ -2,7 +2,8 @@ import React from "react";
 
 function parseInline(text: string): React.ReactNode[] {
   const nodes: React.ReactNode[] = [];
-  const regex = /(\*\*(.+?)\*\*|\*(.+?)\*|`(.+?)`)/g;
+  const regex =
+    /(\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/[^\s)]*)\)|\*\*(.+?)\*\*|\*(.+?)\*|`(.+?)`)/g;
   let lastIndex = 0;
   let match: RegExpExecArray | null;
 
@@ -10,17 +11,32 @@ function parseInline(text: string): React.ReactNode[] {
     if (match.index > lastIndex) {
       nodes.push(text.slice(lastIndex, match.index));
     }
-    if (match[2]) {
-      nodes.push(<strong key={match.index}>{match[2]}</strong>);
-    } else if (match[3]) {
-      nodes.push(<em key={match.index}>{match[3]}</em>);
+    if (match[2] && match[3]) {
+      const href = match[3];
+      const isExternal = href.startsWith("http");
+      nodes.push(
+        <a
+          key={match.index}
+          href={href}
+          className="text-ember underline underline-offset-2 transition hover:text-ember/80"
+          {...(isExternal
+            ? { target: "_blank", rel: "noopener noreferrer" }
+            : {})}
+        >
+          {match[2]}
+        </a>
+      );
     } else if (match[4]) {
+      nodes.push(<strong key={match.index}>{match[4]}</strong>);
+    } else if (match[5]) {
+      nodes.push(<em key={match.index}>{match[5]}</em>);
+    } else if (match[6]) {
       nodes.push(
         <code
           key={match.index}
           className="rounded bg-sand px-1.5 py-0.5 text-sm"
         >
-          {match[4]}
+          {match[6]}
         </code>
       );
     }
