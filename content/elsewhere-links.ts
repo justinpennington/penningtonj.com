@@ -15,6 +15,12 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Make CRM Data a Side Effect of the Work, Not a Chore Next to It",
+    url: "https://dev.to/justinpennington/make-crm-data-a-side-effect-of-the-work-not-a-chore-next-to-it-5900",
+    outlet: "Dev.to",
+    date: "2026-10-19",
+  },
+  {
     title: "Your Tools Are Fine. The Money Is Leaking Between Them.",
     url: "https://justinpennington.substack.com/p/your-tools-are-fine-the-money-is",
     outlet: "Substack",
