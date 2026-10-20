@@ -15,6 +15,12 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "The Founder Who Still Ships: What Staying in the Codebase Buys a Small Software Team",
+    url: "https://justinpennington.hashnode.dev/the-founder-who-still-ships-what-staying-in-the-codebase-buys-a-small-software-team",
+    outlet: "Hashnode",
+    date: "2026-10-20",
+  },
+  {
     title: "Make CRM Data a Side Effect of the Work, Not a Chore Next to It",
     url: "https://dev.to/justinpennington/make-crm-data-a-side-effect-of-the-work-not-a-chore-next-to-it-5900",
     outlet: "Dev.to",
