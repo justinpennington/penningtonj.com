@@ -15,6 +15,12 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Your Most Reliable Employee Might Be Your Biggest Operational Risk",
+    url: "https://medium.com/@justin-pennington-infraxio/your-most-reliable-employee-might-be-your-biggest-operational-risk-4ca51040dbc2",
+    outlet: "Medium",
+    date: "2026-10-21",
+  },
+  {
     title: "The Founder Who Still Ships: What Staying in the Codebase Buys a Small Software Team",
     url: "https://justinpennington.hashnode.dev/the-founder-who-still-ships-what-staying-in-the-codebase-buys-a-small-software-team",
     outlet: "Hashnode",
