@@ -15,6 +15,13 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Don't Hire Someone Who Won't Have to Live With Your System",
+    url: "https://justinpennington.substack.com/p/dont-hire-someone-who-wont-have-to",
+    outlet: "Substack",
+    date: "2026-10-22",
+    note: "A rewrite of The Operator Advantage on hiring people who will actually live with the systems they build.",
+  },
+  {
     title: "Your Most Reliable Employee Might Be Your Biggest Operational Risk",
     url: "https://medium.com/@justin-pennington-infraxio/your-most-reliable-employee-might-be-your-biggest-operational-risk-4ca51040dbc2",
     outlet: "Medium",
