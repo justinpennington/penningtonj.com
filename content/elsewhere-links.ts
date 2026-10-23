@@ -15,6 +15,13 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Buy vs. Build Is the Wrong Ticket. Ask Who Can Change the Workflow.",
+    url: "https://dev.to/justinpennington/buy-vs-build-is-the-wrong-ticket-ask-who-can-change-the-workflow-5o0",
+    outlet: "Dev.to",
+    date: "2026-10-23",
+    note: "A developer-focused rewrite of 'Buying or Building Misses the Real Question' on who can change the workflow when the business changes.",
+  },
+  {
     title: "Don't Hire Someone Who Won't Have to Live With Your System",
     url: "https://justinpennington.substack.com/p/dont-hire-someone-who-wont-have-to",
     outlet: "Substack",
