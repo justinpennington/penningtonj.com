@@ -173,6 +173,7 @@ export const profiles: ElsewhereLink[] = [
   { title: "Wellfound", url: "https://wellfound.com/p/justin-pennington-1?public_profile=1", outlet: "Wellfound" },
   { title: "F6S", url: "https://www.f6s.com/justin-pennington", outlet: "F6S" },
   { title: "Product Hunt", url: "https://www.producthunt.com/@justinpennington", outlet: "Product Hunt" },
+  { title: "Built In — Infraxio company profile", url: "https://builtin.com/company/infraxio", outlet: "Built In", date: "2026-10-21" },
   { title: "X", url: "https://x.com/penningtonj", outlet: "X" },
   { title: "Growth7", url: "https://growth7.io/", outlet: "Growth7" },
   { title: "DockOps", url: "https://www.dockops.app", outlet: "DockOps" },
