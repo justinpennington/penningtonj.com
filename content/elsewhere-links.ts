@@ -15,6 +15,12 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Your B2B Content Has a Traffic Problem Because It Has an Intent Problem",
+    url: "https://medium.com/@justin-pennington-infraxio/your-b2b-content-has-a-traffic-problem-because-it-has-an-intent-problem-ae713e1092b3",
+    outlet: "Medium",
+    date: "2026-10-27",
+  },
+  {
     title: "Your Test Environment Is Lying to You: Build Operations Software for the Dock, Not the Desk",
     url: "https://justinpennington.hashnode.dev/your-test-environment-is-lying-to-you-build-operations-software-for-the-dock-not-the-desk",
     outlet: "Hashnode",
