@@ -15,6 +15,12 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "We Didn't Cut to Seven People. The Work Stopped Needing Thirty.",
+    url: "https://justinpennington.substack.com/p/we-didnt-cut-to-seven-people-the",
+    outlet: "Substack",
+    date: "2026-10-28",
+  },
+  {
     title: "Your B2B Content Has a Traffic Problem Because It Has an Intent Problem",
     url: "https://medium.com/@justin-pennington-infraxio/your-b2b-content-has-a-traffic-problem-because-it-has-an-intent-problem-ae713e1092b3",
     outlet: "Medium",
