@@ -15,6 +15,12 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Integration Is the Second Project Hiding Inside Every Rollout",
+    url: "https://dev.to/justinpennington/integration-is-the-second-project-hiding-inside-every-rollout-pak",
+    outlet: "Dev.to",
+    date: "2026-10-29",
+  },
+  {
     title: "We Didn't Cut to Seven People. The Work Stopped Needing Thirty.",
     url: "https://justinpennington.substack.com/p/we-didnt-cut-to-seven-people-the",
     outlet: "Substack",
