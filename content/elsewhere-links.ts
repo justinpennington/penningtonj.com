@@ -15,6 +15,12 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Fifteen Logins Is Not a System: A Four-Question Audit for What Your Team Should Own",
+    url: "https://justinpennington.hashnode.dev/fifteen-logins-is-not-a-system-a-four-question-audit-for-what-your-team-should-own",
+    outlet: "Hashnode",
+    date: "2026-10-30",
+  },
+  {
     title: "Integration Is the Second Project Hiding Inside Every Rollout",
     url: "https://dev.to/justinpennington/integration-is-the-second-project-hiding-inside-every-rollout-pak",
     outlet: "Dev.to",
