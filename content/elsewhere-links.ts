@@ -21,6 +21,12 @@ export const writingElsewhere: ElsewhereLink[] = [
     date: "2026-10-30",
   },
   {
+    title: "AI Should Show Its Work",
+    url: "https://www.linkedin.com/pulse/ai-should-show-its-work-rule-i-use-every-tool-we-build-pennington-rgaie",
+    outlet: "LinkedIn",
+    date: "2026-10-29",
+  },
+  {
     title: "Integration Is the Second Project Hiding Inside Every Rollout",
     url: "https://dev.to/justinpennington/integration-is-the-second-project-hiding-inside-every-rollout-pak",
     outlet: "Dev.to",
