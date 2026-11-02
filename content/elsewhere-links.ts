@@ -15,6 +15,12 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "The Ordinary Wednesday Test: Why New Systems Quietly Die a Few Weeks After Launch",
+    url: "https://medium.com/@justin-pennington-infraxio/the-ordinary-wednesday-test-why-new-systems-quietly-die-a-few-weeks-after-launch-936820824156",
+    outlet: "Medium",
+    date: "2026-11-02",
+  },
+  {
     title: "Fifteen Logins Is Not a System: A Four-Question Audit for What Your Team Should Own",
     url: "https://justinpennington.hashnode.dev/fifteen-logins-is-not-a-system-a-four-question-audit-for-what-your-team-should-own",
     outlet: "Hashnode",
