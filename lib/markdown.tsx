@@ -27,9 +27,9 @@ function parseInline(text: string): React.ReactNode[] {
         </a>
       );
     } else if (match[4]) {
-      nodes.push(<strong key={match.index}>{match[4]}</strong>);
+      nodes.push(<strong key={match.index}>{parseInline(match[4])}</strong>);
     } else if (match[5]) {
-      nodes.push(<em key={match.index}>{match[5]}</em>);
+      nodes.push(<em key={match.index}>{parseInline(match[5])}</em>);
     } else if (match[6]) {
       nodes.push(
         <code
