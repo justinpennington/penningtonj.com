@@ -15,6 +15,12 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Before You Compare a License to a Build Quote, Write Down Who Gets to Change It",
+    url: "https://justinpennington.substack.com/p/before-you-compare-a-license-to-a",
+    outlet: "Substack",
+    date: "2026-11-03",
+  },
+  {
     title: "The Ordinary Wednesday Test: Why New Systems Quietly Die a Few Weeks After Launch",
     url: "https://medium.com/@justin-pennington-infraxio/the-ordinary-wednesday-test-why-new-systems-quietly-die-a-few-weeks-after-launch-936820824156",
     outlet: "Medium",
