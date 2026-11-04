@@ -15,6 +15,12 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Track the Edit Rate: How We Decide How Much to Trust Each AI Agent Task",
+    url: "https://dev.to/justinpennington/track-the-edit-rate-how-we-decide-how-much-to-trust-each-ai-agent-task-4g46",
+    outlet: "Dev.to",
+    date: "2026-11-04",
+  },
+  {
     title: "Before You Compare a License to a Build Quote, Write Down Who Gets to Change It",
     url: "https://justinpennington.substack.com/p/before-you-compare-a-license-to-a",
     outlet: "Substack",
