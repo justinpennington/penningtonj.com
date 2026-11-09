@@ -265,6 +265,13 @@ export const profiles: ElsewhereLink[] = [
   { title: "Wellfound", url: "https://wellfound.com/p/justin-pennington-1?public_profile=1", outlet: "Wellfound" },
   { title: "F6S", url: "https://www.f6s.com/justin-pennington", outlet: "F6S" },
   { title: "Product Hunt", url: "https://www.producthunt.com/@justinpennington", outlet: "Product Hunt" },
+  {
+    title: "Sessionize — speaker profile",
+    url: "https://sessionize.com/justin-pennington",
+    outlet: "Sessionize",
+    date: "2026-11-06",
+    note: "Speaker profile and talk: Humans That Use AI Win",
+  },
   { title: "Built In — Infraxio company profile", url: "https://builtin.com/company/infraxio", outlet: "Built In", date: "2026-10-21" },
   { title: "StartupBlink — Infraxio company profile", url: "https://www.startupblink.com/startup/infraxio", outlet: "StartupBlink" },
   { title: "Wikidata — Infraxio", url: "https://www.wikidata.org/wiki/Q141805434", outlet: "Wikidata" },
@@ -290,5 +297,6 @@ export const profileSameAs: string[] = [
   "https://wellfound.com/p/justin-pennington-1?public_profile=1",
   "https://www.f6s.com/justin-pennington",
   "https://www.producthunt.com/@justinpennington",
+  "https://sessionize.com/justin-pennington",
   "https://x.com/penningtonj",
 ];
