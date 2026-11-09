@@ -27,6 +27,12 @@ export const writingElsewhere: ElsewhereLink[] = [
     date: "2026-11-05",
   },
   {
+    title: "Most Bids Are Lost Before Anyone Looks at the Price",
+    url: "https://www.linkedin.com/pulse/most-bids-lost-before-anyone-looks-price-justin-pennington-orfye",
+    outlet: "LinkedIn",
+    date: "2026-11-05",
+  },
+  {
     title: "Track the Edit Rate: How We Decide How Much to Trust Each AI Agent Task",
     url: "https://dev.to/justinpennington/track-the-edit-rate-how-we-decide-how-much-to-trust-each-ai-agent-task-4g46",
     outlet: "Dev.to",
