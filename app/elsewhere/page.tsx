@@ -81,16 +81,37 @@ function LinkCard({ link, i }: { link: ElsewhereLink; i: number }) {
 }
 
 function ProfilePill({ link, i }: { link: ElsewhereLink; i: number }) {
+  const pill =
+    "group inline-flex gap-2 border border-ink/10 bg-white px-5 py-3 text-sm font-medium transition duration-300 hover:-translate-y-0.5 hover:border-ember/40 hover:shadow-md hover:shadow-ink/5";
+
   return (
     <Reveal delay={i * 0.04}>
       <a
         href={link.url}
         target="_blank"
         rel="noopener noreferrer me"
-        className="group inline-flex items-center gap-2 rounded-full border border-ink/10 bg-white px-5 py-3 text-sm font-medium transition duration-300 hover:-translate-y-0.5 hover:border-ember/40 hover:shadow-md hover:shadow-ink/5"
+        className={
+          link.note
+            ? `${pill} items-start rounded-2xl`
+            : `${pill} items-center rounded-full`
+        }
       >
-        <span className="transition group-hover:text-ember">{link.title}</span>
-        <ArrowUpRight className="h-3.5 w-3.5 text-ink/30 transition group-hover:text-ember" />
+        {link.note ? (
+          <>
+            <span className="min-w-0 max-w-sm text-left">
+              <span className="block transition group-hover:text-ember">{link.title}</span>
+              <span className="mt-1 block text-xs font-normal leading-snug text-ink/55">
+                {link.note}
+              </span>
+            </span>
+            <ArrowUpRight className="mt-0.5 h-3.5 w-3.5 shrink-0 text-ink/30 transition group-hover:text-ember" />
+          </>
+        ) : (
+          <>
+            <span className="transition group-hover:text-ember">{link.title}</span>
+            <ArrowUpRight className="h-3.5 w-3.5 text-ink/30 transition group-hover:text-ember" />
+          </>
+        )}
       </a>
     </Reveal>
   );
