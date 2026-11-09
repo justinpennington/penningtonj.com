@@ -15,6 +15,13 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "The Lead Didn't Go Cold. It Never Had an Owner.",
+    url: "https://justinpennington.substack.com/p/the-lead-didnt-go-cold-it-never-had",
+    outlet: "Substack",
+    date: "2026-11-09",
+    note: "Substack variation of the founder essay on speed to lead as an operations problem.",
+  },
+  {
     title: "You're Paying Someone to Be the API Your Stack Never Built",
     url: "https://medium.com/@justin-pennington-infraxio/youre-paying-someone-to-be-the-api-your-stack-never-built-9e8a508be438",
     outlet: "Medium",
