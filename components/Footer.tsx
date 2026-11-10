@@ -66,9 +66,31 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <p className="mx-auto max-w-6xl px-5 py-6 text-xs text-white/40 sm:px-8">
-          © {year} Justin Pennington. All rights reserved.
-        </p>
+        <div className="mx-auto max-w-6xl space-y-2 px-5 py-6 sm:px-8">
+          <p className="text-xs text-white/40">
+            © {year} Justin Pennington. All rights reserved.
+          </p>
+          <p className="text-xs text-white/40">
+            Powered by{" "}
+            <a
+              href="https://infraxio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-sm no-underline underline-offset-2 transition-colors hover:text-white hover:underline focus-visible:text-white focus-visible:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Infraxio
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://growth7.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-sm no-underline underline-offset-2 transition-colors hover:text-white hover:underline focus-visible:text-white focus-visible:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Growth7
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
