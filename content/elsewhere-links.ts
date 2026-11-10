@@ -15,6 +15,12 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Same Model, 18 Points Apart: Your Agent Harness Is the Real Product",
+    url: "https://dev.to/justinpennington/same-model-18-points-apart-your-agent-harness-is-the-real-product-2eia",
+    outlet: "Dev.to",
+    date: "2026-11-10",
+  },
+  {
     title: "The Lead Didn't Go Cold. It Never Had an Owner.",
     url: "https://justinpennington.substack.com/p/the-lead-didnt-go-cold-it-never-had",
     outlet: "Substack",
