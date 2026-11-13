@@ -15,6 +15,12 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Nobody Budgets for the Weekend the Data Moves",
+    url: "https://dev.to/justinpennington/nobody-budgets-for-the-weekend-the-data-moves-42od",
+    outlet: "Dev.to",
+    date: "2026-11-13",
+  },
+  {
     title: "AI Got 21% Cheaper in a Month. Most Companies Still Haven't Given It a Job.",
     url: "https://justinpennington.substack.com/p/ai-got-21-cheaper-in-a-month-most",
     outlet: "Substack",
