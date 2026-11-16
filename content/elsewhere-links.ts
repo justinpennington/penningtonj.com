@@ -15,6 +15,12 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Stop Treating the Quote as a PDF: Model It as the First Record of the Job",
+    url: "https://justinpennington.hashnode.dev/stop-treating-the-quote-as-a-pdf-model-it-as-the-first-record-of-the-job",
+    outlet: "Hashnode",
+    date: "2026-11-16",
+  },
+  {
     title: "Nobody Budgets for the Weekend the Data Moves",
     url: "https://dev.to/justinpennington/nobody-budgets-for-the-weekend-the-data-moves-42od",
     outlet: "Dev.to",
