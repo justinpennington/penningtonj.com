@@ -33,6 +33,12 @@ export const writingElsewhere: ElsewhereLink[] = [
     date: "2026-11-11",
   },
   {
+    title: "We Went From 30 People to Seven. Here's What Actually Changed.",
+    url: "https://www.linkedin.com/pulse/we-went-from-30-people-seven-heres-what-actually-justin-pennington-vx55e/",
+    outlet: "LinkedIn",
+    date: "2026-11-11",
+  },
+  {
     title: "Same Model, 18 Points Apart: Your Agent Harness Is the Real Product",
     url: "https://dev.to/justinpennington/same-model-18-points-apart-your-agent-harness-is-the-real-product-2eia",
     outlet: "Dev.to",
