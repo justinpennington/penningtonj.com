@@ -15,6 +15,13 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Someone Else's AI Agent Is Looking for Your API Keys",
+    url: "https://medium.com/@justin-pennington-infraxio/someone-elses-ai-agent-is-looking-for-your-api-keys-121ef3198e81",
+    outlet: "Medium",
+    date: "2026-11-17",
+    note: "How attackers' AI agents hunt for exposed AI gateways and the API keys behind them.",
+  },
+  {
     title: "Stop Treating the Quote as a PDF: Model It as the First Record of the Job",
     url: "https://justinpennington.hashnode.dev/stop-treating-the-quote-as-a-pdf-model-it-as-the-first-record-of-the-job",
     outlet: "Hashnode",
