@@ -15,6 +15,12 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Design Permissions From the Handoff, Not the Org Chart (Including Your AI Agents)",
+    url: "https://justinpennington.hashnode.dev/design-permissions-from-the-handoff-not-the-org-chart-including-your-ai-agents",
+    outlet: "Hashnode",
+    date: "2026-11-20",
+  },
+  {
     title: "Finding the Bug Got Cheap. Shipping the Fix Didn't.",
     url: "https://dev.to/justinpennington/finding-the-bug-got-cheap-shipping-the-fix-didnt-lbe",
     outlet: "Dev.to",
