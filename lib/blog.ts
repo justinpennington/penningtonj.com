@@ -12,6 +12,7 @@ export interface Post extends PostMeta {
   content: string;
 }
 
+// Each markdown file in content/blog is one post. The filename is the slug.
 const postsDir = path.join(process.cwd(), "content/blog");
 
 function parseFrontmatter(raw: string): {
