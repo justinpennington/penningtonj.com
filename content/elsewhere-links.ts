@@ -15,6 +15,13 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Stop Modeling \"Closed\" as an End State: Recurrence Belongs in the Data Model",
+    url: "https://dev.to/justinpennington/stop-modeling-closed-as-an-end-state-recurrence-belongs-in-the-data-model-2h6k",
+    outlet: "Dev.to",
+    date: "2026-11-25",
+    note: "A developer-focused piece on modeling recurrence (renewals, reorders, maintenance) in the data model instead of treating 'closed' as an end state.",
+  },
+  {
     title: "Your Services Firm Can't Scale What Only Lives in Someone's Head",
     url: "https://justinpennington.substack.com/p/your-services-firm-cant-scale-what",
     outlet: "Substack",
