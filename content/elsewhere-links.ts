@@ -15,6 +15,13 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "Your Integrations Are the Attack Surface: A Token Audit After the Todoist Breach",
+    url: "https://justinpennington.hashnode.dev/your-integrations-are-the-attack-surface-a-token-audit-after-the-todoist-breach",
+    outlet: "Hashnode",
+    date: "2026-11-26",
+    note: "A developer-facing audit of API and integration tokens after the Todoist breach.",
+  },
+  {
     title: "Stop Modeling \"Closed\" as an End State: Recurrence Belongs in the Data Model",
     url: "https://dev.to/justinpennington/stop-modeling-closed-as-an-end-state-recurrence-belongs-in-the-data-model-2h6k",
     outlet: "Dev.to",
