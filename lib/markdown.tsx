@@ -103,6 +103,12 @@ export function Markdown({ content }: { content: string }) {
       continue;
     }
 
+    if (line.trim() === "---") {
+      elements.push(<hr key={i} className="my-8 border-ink/10" />);
+      i++;
+      continue;
+    }
+
     if (line.trim() === "") {
       i++;
       continue;
