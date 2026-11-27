@@ -15,6 +15,12 @@ export type ElsewhereLink = {
 
 export const writingElsewhere: ElsewhereLink[] = [
   {
+    title: "The Small Favor That Forks Your Product",
+    url: "https://medium.com/@justin-pennington-infraxio/the-small-favor-that-forks-your-product-128a1c42bf3d",
+    outlet: "Medium",
+    date: "2026-11-27",
+  },
+  {
     title: "Your Integrations Are the Attack Surface: A Token Audit After the Todoist Breach",
     url: "https://justinpennington.hashnode.dev/your-integrations-are-the-attack-surface-a-token-audit-after-the-todoist-breach",
     outlet: "Hashnode",
